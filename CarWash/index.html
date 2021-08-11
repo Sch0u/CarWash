@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Wash</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="washForm">
+    <h2>Schou Carwash &#128663&#128703</h2>
+    <form name="form">
+        <!-- License plate text -->
+        <p id="bank"></p>
+        <label for="licensePlate">License plate:</label><br>
+        <input id="licensePlate" placeholder="AX 54 124" type="text" name="licensePlate" required>
+        <label for="Buttons">Choose your program:</label><br>
+        <!-- Buttons -->
+        <div class="washButtons">
+        <button class="btn" value="Bronze" id="bronze" data-time="3">Bronze</button>
+        <button class="btn" value="Silver" id="silver" data-time="60">Silver</button>
+        <button class="btn" value="Gold" id="gold" data-time="90">Gold</button>
+        <button class="btn" value="Diamond" id="diamond" data-time="120">Diamond</button><br>
+        </div>
+        <hr size="1" width="100%" color="#ddd">  
+        <!-- Information about the differents washes -->
+        Read About The Difference Between The Washes:<br>
+        <select name="washes" id="washes" onchange="washSelectedInfo()">
+            <option  selected="selected">Please Select Wash First</option>
+        </select>
+        <p id="selectedText">Waiting for selected program</p>
+        <hr size="1" width="100%" color="#ddd">  
+        <!-- Display of timer -->
+        <div class="display">
+            <p class="display_time-text"></p>
+            <p class="display_wash-text"></p>
+            <p class="display_time-left"></p>
+            <p class="display_car-model"></p>
+        </div>
+        <button id="washStopBTN" onclick="washStop()">Cancel Wash</button>
+    </form>
+</div>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "",
+    authDomain: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: "",
+    measurementId: ""
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+</body>
+</html>

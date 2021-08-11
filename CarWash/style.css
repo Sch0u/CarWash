@@ -1,0 +1,65 @@
+body{
+    background-image: url("https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2FyJTIwd2FzaHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* The whole form */
+.washForm{
+    font-family: 'Open Sans Condensed', arieal, sans;
+    width: 500px;
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 50px auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+}
+
+/* H2 Title */
+.washForm h2{
+    background: #4d4d4d;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #b9b9b9;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 20px;  
+    margin: -30px -20px 30px -20px;
+}
+
+/* Button Hovers (Bronze) */
+.washForm #bronze:hover{
+    background-color: #b08d57;
+    box-shadow: 2px 2px 0.5em rgba(0, 0, 0, 0.55);
+}
+
+/* Button Hovers (Silver) */
+.washForm #silver:hover{
+    background-color:  #C0C0C0;
+    box-shadow: 2px 2px 0.5em rgba(0, 0, 0, 0.55);
+}
+
+/* Button Hovers (Gold) */
+.washForm #gold:hover{
+    background-color: #d4af37;
+    box-shadow: 2px 2px 0.5em rgba(0, 0, 0, 0.55);
+}
+
+/* Button Hovers (Diamond) */
+.washForm #diamond:hover{
+    background-color: #b9f2ff ;
+    box-shadow: 2px 2px 0.5em rgba(0, 0, 0, 0.55);
+}
+
+.washForm input{
+	display: block;
+    width: 100%;
+    border: none;
+	border-bottom: 1px solid #ddd;
+	background: transparent;
+    margin-bottom: 10px;
+	font: 16px Arial, Helvetica, sans-serif;
+	height: 40px;
+}
+
+#washStopBTN{
+    display: none;
+}
