@@ -4,7 +4,7 @@ This is my atempt to make a program that stores in a database using in HTML, CSS
 
 ## Description
 
-I made this as a HF 1 project in school, so her is it!
+I made this as a HF 1 project in school, so her it is!
 
 ### Dependencies
 
